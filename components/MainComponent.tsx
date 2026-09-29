@@ -1,19 +1,16 @@
-
+//Components
+import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
+import SectionThree from "./SectionThree";
+import SectionFour from "./SectionFour";
 
 export default function MainComponent() {
     return(
-        <main className="w-full max-w-[120rem] h-screen border overflow-y-auto">
-            <div className="w-full relative">
-                <video 
-                    src={'/videos/01 Background-video.mp4'}
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                    className="w-full h-auto pointer-events-none select-none"
-                />
-                <p className="absolute bottom-0 left-1/2 -translate-x-1/2 text-[30px]">SCROLL DOWN</p>
-            </div>
+        <main className="w-full max-w-[120rem] h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-[#f5f5f5CC]/80 scrollbar-track-transparent">
+            <SectionOne />
+            <SectionTwo />
+            <SectionThree />
+            <SectionFour />
         </main>
     );
 }
