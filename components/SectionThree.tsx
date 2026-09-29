@@ -5,7 +5,7 @@ export default function SectionThree() {
     return(
         <div className=" relative">
             <Image 
-                src={'/images/03 Background-photo.webp'}
+                src={'/images/03_Background-photo.webp'}
                 alt="photo"
                 width={2112}
                 height={1434}
