@@ -7,7 +7,7 @@ import { SiTiktok, SiInstagram, SiYoutube, SiFacebook, SiX, SiDiscord } from "re
 
 export default function HeaderNav() {
     return(
-        <header className="py-5 px-15 z-10 fixed top-0 max-w-[120rem] w-full">
+        <header className="py-5 px-15 z-10 fixed top-0 w-full bg-gradient-to-b from-[#000000] via-[#000000] to-transparent">
             <nav className="flex w-full items-center justify-between">
                 <div className="flex gap-4 items-center justify-center ">
                     <h1 className="font-staatliches text-white text-[40px]">LETDOWN.</h1>

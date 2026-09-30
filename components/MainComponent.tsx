@@ -3,14 +3,16 @@ import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
+import SectionFive from "./SectionFive";
 
 export default function MainComponent() {
     return(
-        <main className="w-full max-w-[120rem] h-screen overflow-y-auto scrollbar-thin scrollbar-thumb-[#f5f5f5CC]/80 scrollbar-track-transparent">
+        <main className="w-full">
             <SectionOne />
             <SectionTwo />
             <SectionThree />
             <SectionFour />
+            <SectionFive />
         </main>
     );
 }
