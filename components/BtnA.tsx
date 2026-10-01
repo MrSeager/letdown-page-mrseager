@@ -1,11 +1,19 @@
+'use client';
+
 interface BtnAProps {
     name: string;
+    itemId: string;
 }
 
-export default function BtnA({ name }: BtnAProps) {
+export default function BtnA({ name, itemId }: BtnAProps) {
+    const scrollTo = () => {
+        document.getElementById(itemId)?.scrollIntoView({ behavior: 'smooth' })
+    }
+
     return(
         <button
             type="button"
+            onClick={scrollTo}
             className="pt-1 outline-none cursor-pointer text-base/7 text-[30px] uppercase group relative duration-300 hover:text-white focus:text-white"
         >
             {name}

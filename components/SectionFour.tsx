@@ -5,7 +5,8 @@ import Image from "next/image";
 export default function SectionFour() {
     return(
         <div 
-            className="relative border-t border-b border-white/15 flex flex-col items-center gap-5 py-15
+            id="Press"
+            className="relative scroll-mt-10 border-t border-b border-white/15 flex flex-col items-center gap-5 py-15 px-5
                         bg-[url(/images/02_Background-300px.webp)]"
         >
             <Image 

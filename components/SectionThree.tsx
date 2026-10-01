@@ -3,21 +3,21 @@ import Image from "next/image";
 
 export default function SectionThree() {
     return(
-        <div className="relative">
+        <div id="About" className="scroll-mt-10 relative ps-5 md:ps-15 lg:ps-0 bg-[url(/images/04_Background-300px.webp)]">
             <Image 
                 src={'/images/03_Background-photo.webp'}
                 alt="photo"
                 width={2112}
                 height={1434}
-                className="w-full"
+                className="w-full hidden lg:block"
             />
-            <div className="absolute top-0 h-full w-full grid grid-cols-2 grid-rows-1">
+            <div className="lg:absolute top-0 h-full w-full lg:grid grid-cols-2 grid-rows-1">
                 <span />
-                <div className="pe-30 py-15 flex flex-col items-center justify-center text-[20px] text-pretty gap-3">
+                <div className="pe-5 md:pe-15 lg:pe-30 py-15 flex flex-col items-center justify-center text-[20px] text-pretty gap-3">
                     <h3 className="uppercase text-center text-[40px] shrink-0">About</h3>
                     <div className="relative min-h-0">
-                        <div className="overflow-y-auto min-h-0 w-full h-full py-10">
-                            <span className="absolute top-0 w-full h-15 bg-gradient-to-b from-[#0f0d0e] to-transparent" />
+                        <div className="overflow-y-auto lg:min-h-0 w-full h-full py-10">
+                            <span className="hidden lg:block absolute top-0 w-full h-15 bg-gradient-to-b from-[#0f0d0e] to-transparent" />
                             <p className="tracking-[1px] select-text">
                                 Letdown. While everyone else was learning to garden or make bread from scratch in 2020, Blake Coddington was busy finding a new way to musically express himself. The Chicago-based rocker launched Letdown. (period included), a new project that features his powerful range of vocals and deeply personal lyrics over catchy guitar hooks and hypnotizing drum beats.
                                 <br /><br />
@@ -35,7 +35,7 @@ export default function SectionThree() {
                                 <br /><br />
                                 “Touring is the only thing I can think about these days,” Coddington says. “I lose sleep over it every night. I dream of playing music in front of people every day, so touring is hopefully going to be a big part of the next few years of my life. I just want to get on the damn road!”
                             </p>
-                            <span className="absolute bottom-0 w-full h-15 bg-gradient-to-b from-transparent to-[#0f0d0e]" />
+                            <span className="hidden lg:block absolute bottom-0 w-full h-15 bg-gradient-to-b from-transparent to-[#0f0d0e]" />
                         </div>
                     </div>
                 </div>
