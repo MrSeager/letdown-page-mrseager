@@ -21,7 +21,7 @@ export default function SectionThree() {
                     <h3 className="uppercase text-center text-[40px] shrink-0 mb-5">About</h3>
                     <div 
                         onClick={() => setScroll(true)}
-                        className={`${!scroll ? 'overflow-hidden' : 'overflow-y-auto'} relative overscroll-contain scrollbar-gutter-stable scrollbar-thin lg:min-h-0 w-full h-full overscroll-contain`}>
+                        className={`${!scroll ? 'lg:overflow-y-hidden' : 'lg:overflow-y-auto'} overscroll-contain scrollbar-gutter-stable scrollbar-thin lg:min-h-0 w-full h-full`}>
                         <p className=" tracking-[1px] select-text">
                             Letdown. While everyone else was learning to garden or make bread from scratch in 2020, Blake Coddington was busy finding a new way to musically express himself. The Chicago-based rocker launched Letdown. (period included), a new project that features his powerful range of vocals and deeply personal lyrics over catchy guitar hooks and hypnotizing drum beats.
                             <br /><br />
