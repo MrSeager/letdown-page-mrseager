@@ -1,6 +1,6 @@
 'use client';
 //Components
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BtnA from "./BtnA";
 import LinkA from "./LinkA";
 import LinkB from "./LinkB";
@@ -9,9 +9,24 @@ import { SiTiktok, SiInstagram, SiYoutube, SiFacebook, SiX, SiDiscord } from "re
 
 export default function HeaderNav() {
     const [open, setOpen] = useState<boolean>(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const listenSection = document.getElementById("Listen");
+        if (!listenSection) return;
+
+        const checkScroll = () => {
+        setScrolled(window.scrollY >= listenSection.offsetTop);
+        };
+
+        checkScroll(); // run once on mount (in case page loads already scrolled)
+        window.addEventListener("scroll", checkScroll, { passive: true });
+        return () => window.removeEventListener("scroll", checkScroll);
+    }, []);
 
     return(
-        <header className="py-5 px-5 md:px-15 z-10 fixed top-0 w-full bg-gradient-to-b from-[#000000] via-[#000000] to-transparent">
+        <header className={`py-5 px-5 md:px-15 z-10 fixed top-0 w-full duration-300
+            ${!scrolled ? 'bg-transparent' : 'bg-gradient-to-b from-[#000000] via-[#000000] to-transparent'}`}>
             <nav className="flex flex-col lg:flex-row w-full items-center justify-between gap-0 lg:gap-5">
                 <div className="w-full lg:w-auto flex items-center justify-between">
                     <h1 className="font-staatliches text-white text-[40px]">LETDOWN.</h1>
