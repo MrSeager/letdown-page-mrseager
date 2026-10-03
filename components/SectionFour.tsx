@@ -17,7 +17,7 @@ export default function SectionFour() {
                 className="bottom-0 absolute pointer-events-none select-none left-1/2 -translate-x-1/2"
             />
             <h3 className="text-[40px] uppercase">Press</h3>
-            <p className="text-[20px] mb-5 max-w-[35rem]">Everything you need for press coverage, event promotion, and media features. Access high-resolution promo photos, official logos, biography, and media assets in one place.</p>
+            <p className="text-[20px] mb-5 max-w-[35rem] tracking-[1px]">Everything you need for press coverage, event promotion, and media features. Access high-resolution promo photos, official logos, biography, and media assets in one place.</p>
             <LinkC 
                 name="Open press kit"
                 classN="px-15"
