@@ -25,10 +25,10 @@ export default function HeaderNav() {
     }, []);
 
     return(
-        <header className={`py-5 px-5 md:px-15 z-10 fixed top-0 w-full duration-300
-            ${!scrolled ? 'bg-transparent' : 'bg-gradient-to-b from-[#000000] via-[#000000] to-transparent'}`}>
-            <nav className="flex flex-col lg:flex-row w-full items-center justify-between gap-0 lg:gap-5">
-                <div className="w-full lg:w-auto flex items-center justify-between">
+        <header className={`z-10 fixed top-0 w-full duration-300`}>
+            <nav className="relative px-0 py-5 flex flex-col lg:flex-row w-full items-center justify-between gap-0 lg:gap-5">
+                <span className={`-z-1 absolute top-0 w-full bottom-0 bg-gradient-to-b from-[#000000] via-[#000000] to-transparent duration-300 ease-in-out ${!scrolled && !open ? 'max-h-0' : 'max-h-500'}`} />
+                <div className="ps-5 lg:ps-15 pe-5 lg:pe-0 w-full lg:w-auto flex items-center justify-between">
                     <h1 className="font-staatliches text-white text-[40px]">LETDOWN.</h1>
                     <button
                         type="button"
@@ -65,7 +65,7 @@ export default function HeaderNav() {
                         itemId="Contact"
                     />
                 </div>
-                <div className={`overflow-hidden flex gap-5 items-center justify-center lg:max-h-400
+                <div className={`pe-0 lg:pe-15  overflow-hidden flex gap-5 items-center justify-center lg:max-h-400
                                 ${open ? "max-h-400 pb-50" : "max-h-0 pb-0"} duration-300 ease-in-out`}>
                     <LinkB 
                         icon={<SiTiktok size={20} />}

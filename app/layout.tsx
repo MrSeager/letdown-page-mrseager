@@ -16,7 +16,11 @@ const staatliches = Staatliches({
 
 export const metadata: Metadata = {
   title: "LETDOWN.",
-  description: "LETDOWN.",
+  description: "LETDOWN. promotion page",
+  openGraph: {
+    title: "LETDOWN.",
+    description: "LETDOWN. promotion page",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
