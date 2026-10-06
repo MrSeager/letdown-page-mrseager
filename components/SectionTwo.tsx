@@ -6,7 +6,7 @@ export default function SectionTwo() {
         <div id="Listen" className="scroll-mt-10 bg-[url(/images/02_Background-300px.webp)] border-t border-b border-white/15 bg-size-[300px_300px]">
             <div className="grid lg:grid-cols-2 max-w-[120rem] mx-auto">
                 <div 
-                    className="px-5 md:px-25 py-15 grid grid-cols-2 items-start gap-5
+                    className="order-2 lg:order-1 px-5 md:px-25 py-15 grid grid-cols-2 items-start gap-5
                                 bg-[url(/images/02_1_Background-lightening.webp)] bg-contain bg-no-repeat bg-bottom"
                 >
                     <h2 className="uppercase text-[40px] col-span-2 text-center">Listen</h2>
@@ -44,7 +44,7 @@ export default function SectionTwo() {
                     />
                     <p className="col-span-2 text-[20px] tracking-[1px]">Letdown. delivers high-energy alternative rock crafted for late-night drives, cathartic screaming, and reminding you that you’re never as isolated as you think. Pick your favorite streaming service and turn it up.</p>
                 </div>
-                <div className="px-5 md:px-25 py-15 flex flex-col gap-5 items-center">
+                <div className="order-1 lg:order-2 px-5 md:px-25 py-15 flex flex-col gap-5 items-center">
                     <h2 className="uppercase text-[40px]">Start here</h2>
                     <iframe data-testid="embed-iframe" className="border-radius:12px" src="https://open.spotify.com/embed/artist/2rP19mjQlqtCScJ3zqLUb1?utm_source=generator&theme=0&si=968347b9268e4f14" width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
