@@ -17,13 +17,13 @@ const staatliches = Staatliches({
 export const metadata: Metadata = {
   metadataBase: new URL("https://letdown-page-mrseager.vercel.app"),
   title: "LETDOWN.",
-  description: "LETDOWN. advertising page. Contains links to music services apps and various social media.",
+  description: "LETDOWN. advertising page. Contains links to music service apps and various social media.",
   icons: { 
     icon: "/images/07_Logo_64px.ico", 
   },
   openGraph: {
     title: "LETDOWN.",
-    description: "LETDOWN. advertising page. Contains links to music services apps and various social media.",
+    description: "LETDOWN. advertising page. Contains links to music service apps and various social media.",
     images: [
       {
         url: "/images/03_background-photo.jpg",
