@@ -16,10 +16,24 @@ const staatliches = Staatliches({
 
 export const metadata: Metadata = {
   title: "LETDOWN.",
-  description: "LETDOWN. promotion page",
+  description: "LETDOWN. advertising page.",
+  icons: { 
+    icon: "/images/07_Logo_64px.ico", 
+  },
   openGraph: {
     title: "LETDOWN.",
-    description: "LETDOWN. promotion page",
+    description: "LETDOWN. advertising page.",
+    images: [
+      {
+        url: "/images/03_Background-photo.webp",
+        width: 2112,
+        height: 1434,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/03_Background-photo.webp"],
   },
 };
 

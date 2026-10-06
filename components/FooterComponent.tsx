@@ -24,7 +24,7 @@ export default function FooterComponent() {
                 />
                 <BiMehBlank size={25} />
             </div>
-            <p className="mb-5 mx-5 tracking-[1px] text-[15px]">COPYRIGHT ©2026. ALL RIGHTS RESERVED. UNAUTHORIZED REPRODUCTION, IN WHOLE OR IN PART, IS STRICTLY PROHIBITED.</p>
+            <p className="mb-5 mx-5 tracking-[1px] text-[15px] text-center">COPYRIGHT ©2026. ALL RIGHTS RESERVED. UNAUTHORIZED REPRODUCTION, IN WHOLE OR IN PART, IS STRICTLY PROHIBITED.</p>
         </footer>
     );
 }

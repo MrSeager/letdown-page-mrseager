@@ -27,7 +27,10 @@ export default function HeaderNav() {
     return(
         <header className={`z-10 fixed top-0 w-full duration-300`}>
             <nav className="relative px-0 py-5 flex flex-col lg:flex-row w-full items-center justify-between gap-0 lg:gap-5">
-                <span className={`-z-1 absolute top-0 w-full bottom-0 bg-gradient-to-b from-[#000000] via-[#000000] to-transparent duration-300 ease-in-out ${!scrolled && !open ? 'max-h-0' : 'max-h-500'}`} />
+                <div className={`absolute -z-1 flex flex-col w-full duration-300 top-0 ${!scrolled && !open ? 'max-h-0' : 'max-h-500'}`}>
+                    <span className={`w-full h-100 bg-[url(/images/04_Background-300px.webp)] duration-300 ${!open ? 'max-h-0' : 'max-h-500'}`} />
+                    <span className={`w-full h-25 bg-[url(/images/05_Background-line-h100w300px.webp)] bg-repeat-x duration-300 ease-in-out`} />
+                </div>
                 <div className="ps-5 lg:ps-15 pe-5 lg:pe-0 w-full lg:w-auto flex items-center justify-between">
                     <h1 className="font-staatliches text-white text-[40px]">LETDOWN.</h1>
                     <button
