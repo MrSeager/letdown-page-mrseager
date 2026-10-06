@@ -26,15 +26,15 @@ export const metadata: Metadata = {
     description: "LETDOWN. advertising page. Contains links to music services apps and various social media.",
     images: [
       {
-        url: "/images/03_Background-photo.webp",
-        width: 2112,
-        height: 1434,
+        url: "/images/03_background-photo.jpg",
+        width: 1600,
+        height: 1086,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/03_Background-photo.webp"],
+    images: ["/images/03_background-photo.jpg"],
   },
 };
 
