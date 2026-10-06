@@ -15,6 +15,7 @@ const staatliches = Staatliches({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://letdown-page-mrseager.vercel.app"),
   title: "LETDOWN.",
   description: "LETDOWN. advertising page.",
   icons: { 
