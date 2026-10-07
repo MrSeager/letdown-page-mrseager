@@ -17,24 +17,24 @@ const staatliches = Staatliches({
 export const metadata: Metadata = {
   metadataBase: new URL("https://letdown-page-mrseager.vercel.app"),
   title: "LETDOWN.",
-  description: "LETDOWN. advertising page. Contains links to music service apps and various social media.",
+  description: "Music, Tours, Merch & Social Media. Contains links to music service apps and various social media...",
   icons: { 
     icon: "/images/07_Logo_64px.ico", 
   },
   openGraph: {
     title: "LETDOWN.",
-    description: "LETDOWN. advertising page. Contains links to music service apps and various social media.",
+    description: "Music, Tours, Merch & Social Media. Contains links to music service apps and various social media...",
     images: [
       {
-        url: "/images/03_background-photo.jpg",
-        width: 1600,
-        height: 1086,
+        url: "/images/08_Preview.jpg",
+        width: 1173,
+        height: 1174,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/03_background-photo.jpg"],
+    images: ["/images/08_Preview.jpg"],
   },
 };
 
