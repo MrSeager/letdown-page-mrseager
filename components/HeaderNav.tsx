@@ -38,7 +38,7 @@ export default function HeaderNav() {
                         className="uppercase text-[30px] cursor-pointer flex gap-1 lg:hidden"
                         onClick={() => setOpen(!open)}
                     >
-                        Menu <span className={`duration-300 ${open ? "-rotate-90 ps-1" : "rotate-90 pe-1"}`}>&gt;</span>
+                        Menu <span className={`duration-300 ${open ? "rotate-0" : "rotate-180"}`}>▲</span>
                     </button>
                 </div>
                 <div className={`overflow-hidden w-full lg:w-auto flex flex-col lg:flex-row gap-4 lg:max-h-400 items-center justify-center lg:me-auto
@@ -69,7 +69,7 @@ export default function HeaderNav() {
                     />
                 </div>
                 <div className={`pe-0 lg:pe-15  overflow-hidden flex gap-5 items-center justify-center lg:max-h-400
-                                ${open ? "max-h-400 pb-50" : "max-h-0 pb-0"} duration-300 ease-in-out`}>
+                                ${open ? "max-h-400" : "max-h-0"} duration-300 ease-in-out`}>
                     <LinkB 
                         icon={<SiTiktok size={20} />}
                         hrefLink="https://www.tiktok.com/@foreveraletdown"
