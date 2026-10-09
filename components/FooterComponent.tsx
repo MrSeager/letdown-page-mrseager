@@ -29,7 +29,7 @@ export default function FooterComponent() {
                 />
                 <div className={`flex shadow-white/25 gap-1 items-center justify-center rounded rounded-3 duration-300 ${open ? 'bg-white text-black shadow-md' : 'bg-transparent'}`}>
                     <Link 
-                        href={""}
+                        href={"https://www.linkedin.com/in/yevgen-kaverin-6a7082399/"}
                         target="_blank"
                         className={`uppercase text-[20px] text-shadow-black/25 pt-1 duration-300 overflow-hidden
                                     hover:text-shadow-sm

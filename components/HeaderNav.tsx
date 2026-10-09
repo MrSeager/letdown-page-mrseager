@@ -35,10 +35,10 @@ export default function HeaderNav() {
                     <h1 className="font-staatliches text-white text-[40px]">LETDOWN.</h1>
                     <button
                         type="button"
-                        className="uppercase text-[30px] cursor-pointer flex gap-1 lg:hidden"
+                        className="uppercase text-[30px] cursor-pointer flex gap-1 lg:hidden flex items-center justify-center"
                         onClick={() => setOpen(!open)}
                     >
-                        Menu <span className={`duration-300 ${open ? "rotate-0" : "rotate-180"}`}>▲</span>
+                        <span>Menu</span> <span className={`duration-300 ${open ? "rotate-0" : "rotate-180 pt-2"}`}>&#9652;</span>
                     </button>
                 </div>
                 <div className={`overflow-hidden w-full lg:w-auto flex flex-col lg:flex-row gap-4 lg:max-h-400 items-center justify-center lg:me-auto
